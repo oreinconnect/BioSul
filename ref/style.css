@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+p{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 250;
+
+}
+
+h4{
+    font-size: 1.75rem;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 350;
+}
+
+body{
+    background-color: #0C110D;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 52rem;
+    gap: 2.5rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.logo{
+    display: flex;
+    height: 5.2rem;
+    width: 3.5rem;
+    margin-left: 2.7rem;
+    margin-top: 0.15rem;
+}
+
+header{
+    display: inline-flex;
+}
+
+
+footer{
+    display: inline-flex;
+    gap: 2.75rem;
+    padding-left: 33%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 4.35rem;
+    background-color: #111D12;
+    width: 100%;
+}
+
+.textofooter{
+    display: flex;
+    margin-top: 3.65rem;
+}
+
+.contatofooter{
+    display: flex;
+    bottom: 0;
+    margin-left: 7rem;
+    position: fixed;
+    margin-bottom: 0.35rem;
+}
