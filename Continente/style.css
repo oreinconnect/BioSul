@@ -9,7 +9,6 @@ p{
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 250;
-
 }
 
 h4{
@@ -50,14 +49,11 @@ header{
     display: inline-flex;
 }
 
-
 footer{
     display: inline-flex;
     gap: 2.75rem;
-    padding-left: 33%;
-    position: fixed;
-    bottom: 0;
-    padding-bottom: 4.35rem;
+    justify-content: center;
+    padding-bottom: 3rem;
     background-color: #111D12;
     width: 100%;
 }
@@ -67,10 +63,69 @@ footer{
     margin-top: 3.65rem;
 }
 
-.contatofooter{
+#contatofooter{
     display: flex;
-    bottom: 0;
-    margin-left: 7rem;
-    position: fixed;
-    margin-bottom: 0.15rem;
+    background-color: #111D12;
+    justify-content: center;
+    padding-right: 1rem;
 }
+
+#contatofooter p{
+    opacity: 0.9;
+    font-size: 0.85rem;
+}
+
+.conteudo{
+    display: inline-flex;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 3rem;
+}
+
+#imagemconteudo{
+    width: 35rem;
+}
+
+.textoconteudo{
+    text-align: center;
+    margin-left: 4rem;
+    font-size: 18px;
+    margin-top: 0.825rem;
+    text-align: left;
+}
+
+#rowtextoconteudo{
+    display:flexbox;
+    gap: 0;
+    margin: 1.2rem 5rem 1rem 0;
+}
+
+h1{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.325rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.4rem;
+    font-weight:500;
+}
+
+.hr{
+    display: flex;
+    width: 25rem;
+    margin-left: 33.3rem;
+
+}
+
+#textoimagem{
+    margin-left: 22.5rem;
+    padding-bottom: 6rem;
+    opacity: 0.9;
+}
+
+#continentenavbar{
+    color:#d2d2d2;
+    font-weight: 200;
+}
+
+
