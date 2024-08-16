@@ -85,8 +85,60 @@ h1{
     font-weight:500;
 }
 
-#paisesnavbar{
-    color:#d2d2d2;
+h5{
+    text-decoration: underline;
+    font-family: "Inter", sans-serif;
     font-weight: 300;
+    font-size: 1.05rem;
 }
 
+h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#cardquiz{
+    background-color: #2F1900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 26rem 6rem 26rem;
+    border-radius: 3rem;
+}
+
+#tituloquiz{
+    margin-top: 3rem;
+}
+
+#subtituloquiz{
+    margin-top: 1.8rem;
+}
+
+#textoquiz{
+    margin-top: 3rem;
+    width: 25rem;
+    text-align: center;
+}
+
+/* botao entrar no quiz */
+#botaoenviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#enviarbotao{
+    background-color: #273715;
+    border-radius: 2rem;
+    margin: 4rem 3rem 3rem 3rem;
+    padding: 1.5rem 2.8rem 1.5rem 2.8rem;
+    border: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+}

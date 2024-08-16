@@ -3,3 +3,14 @@ Tarefa -> fazer uma barra de navegação para ter como padrão
     background-color: hsla(0, 0%, 100%, 0.02);
     border-radius: 15rem 15rem;
     height: 0rem;
+
+
+
+
+
+
+
+
+
+250x450 p itens
+310x520 current item
