@@ -85,8 +85,31 @@ h1{
     font-weight:500;
 }
 
-#paisesnavbar{
-    color:#d2d2d2;
-    font-weight: 300;
+h5{
+    text-decoration: underline;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.05rem;
 }
 
+h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
