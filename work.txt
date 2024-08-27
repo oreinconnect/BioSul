@@ -14,3 +14,7 @@ Tarefa -> fazer uma barra de navegação para ter como padrão
 
 250x450 p itens
 310x520 current item
+
+
+
+FALTA O JS DO HOMEPAGE, O NAVBAR QUE DESCE JUNTO

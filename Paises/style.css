@@ -105,11 +105,49 @@ h2{
 
 h3{
     font-family: "Inter", sans-serif;
-    font-weight: 500;
+    font-weight: 370;
     font-size: 1.85rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
+}
+
+#conteudo>img{
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 26.5rem;
+}
+
+#conteudo>h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.rowesquerda,
+.rowdireita{
+    display: inline-flex;
+    margin: 2rem 7rem 0 7rem;
+}
+
+.rowesquerda,
+.rowdireita>p{
+    display: flex;
+    font-size: 1.1585rem;
+    font-weight: 280;
+}
+
+.rowdireita>p{
+    margin-right: 1rem;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.rowesquerda>p{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    text-align: left;
 }
