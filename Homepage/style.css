@@ -86,7 +86,7 @@ h1{
 #homepageh1{
     display: flex;
     font-size: 2.85rem;
-    margin-top: 11.5rem;
+    margin-top: 13rem;
 }
 
 h5{
@@ -178,7 +178,7 @@ h3{
     align-items: center;
     justify-content: center;
     padding: 3rem;
-    margin: 8rem 0 4rem 0;
+    margin: 8rem 0 3rem 0;
 }
 
 #linhabotoesgame{
@@ -210,7 +210,7 @@ h3{
     gap: 2rem;
     justify-content: center;
     margin-top: 1.8rem;
-    gap: 5rem;
+    gap: 8rem;
 }
 
 #noticias{
@@ -252,5 +252,31 @@ h3{
     padding: 0.4rem;
 }
 /* ------------------------------------ */
+#conteudosvideos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
 
+#conteudosvideos>hr{
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 0.8rem;
+    width: 30rem;
+}
 
+#rowvideos{
+    display: inline-flex;
+    gap: 10rem;
+}
+
+.cardvideos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
