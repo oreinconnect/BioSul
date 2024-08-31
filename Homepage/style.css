@@ -35,17 +35,7 @@ a{
     gap: 2.5rem;
 }
 
-.logo{
-    display: flex;
-    height: 5.2rem;
-    width: 3.5rem;
-    margin-left: 2.7rem;
-    margin-top: 0.15rem;
-}
 
-header{
-    display: inline-flex;
-}
 
 footer{
     display: inline-flex;
@@ -83,12 +73,6 @@ h1{
     font-weight:500;
 }
 
-#homepageh1{
-    display: flex;
-    font-size: 2.85rem;
-    margin-top: 13rem;
-}
-
 h5{
     text-decoration: underline;
     font-family: "Inter", sans-serif;
@@ -107,12 +91,6 @@ h2{
     margin-top: 5rem;
 }
 
-#homepageh1>p{
-    color: #598D17;
-    margin-left: 0.82rem;
-    font-weight: 700;
-}
-
 h3{
     font-family: "Inter", sans-serif;
     font-weight: 500;
@@ -129,15 +107,74 @@ h3{
     color: #D3D3D3;
 }
 
-#telainicial{
-    background-image: url(../images/Img-Background-HomePage.jpg);
+/*  */
+
+
+.logo{
+    display: flex;
+    height: 5.2rem;
+    width: 3.5rem;
+    margin-left: 2.7rem;
+    margin-top: 0.15rem;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: #111D12;
+}
+
+#header{
+    display: inline-flex;
+}
+
+.navbar{
+    display: flex;
+    gap: 2.5rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+
+.banner{
+    /* BACKGROUND IMAGEM */
+    height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+    url(../images/Img-Background-HomePage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 100vh;
-    padding-bottom: 5rem;
-
+    /* BIOMAS DA AMERICA DO SUL */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/* BIOMAS DA AMERICA DO SUL */
+.banner h1{ 
+    font-size: 2.85rem;
+    margin-bottom: 4rem;
+    gap: 0.8rem;
+}
+
+.banner h1 span{
+    color: #598D17;
+}
+
+.banner>
+h1,span{
+    font-weight: 600;
+}
+
+
+
+
+
+/*  */
 
 #continenteh4{
     display: flex;
@@ -245,6 +282,14 @@ h3{
 }
 
 .cardnoticia>p{
+    color: black;
+    font-weight: 400;
+    text-decoration: underline;
+    font-size: 1rem;
+    padding: 0.4rem;
+}
+
+.anoticias{
     color: black;
     font-weight: 400;
     text-decoration: underline;

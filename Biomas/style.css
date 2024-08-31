@@ -87,93 +87,99 @@ h1{
     font-weight:500;
 }
 
+* {box-sizing:border-box}
 
-.container{
-    position: relative;
-    padding: 15px;
-    max-width: 640px;
-    margin: 0 auto;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.gallery-wrapper{
-    overflow-x: auto;
+/* Make the images invisible by default */
+.Containers {
+  display: none;
 }
 
-.gallery{
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 15px;
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
 }
 
-.arrow-left,
-.arrow-right{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 20px;
-    line-height: 250px;
-    width: 40px;
-    text-align: center;
-    color: red;
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(to left, transparent 0%, white 200%);
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
 }
 
-.arrow-left,
-.arrow-right{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 20px;
-    line-height: 250px;
-    width: 40px;
-    text-align: center;
-    color: red;
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(to left, transparent 0%, white 200%);
-    opacity: 0.1;
-    transition: all 600ms ease-in-out;
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-.arrow-left:hover,
-.arrow-right:hover{
-    opacity: 1;
+/* Caption Info */
+.info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
 }
 
-.arrow-right{
-    left: auto;
-    right: 0;
-    background: linear-gradient(to right, transparent 0%, white 200%);
+/* Content */
+.info {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
 }
 
-.item{
-    width: 310px;
-    height: 520px;
-    flex-shrink: 0;
-    opacity: 0.6;
-    transition: all 600ms ease-in-out;
-    background-size: cover;
-    background: no-repeat center;
-    border: 2px solid red;
+/* The circles or bullets indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background: linear-gradient(92.18deg, #a049e9 -25.78%, #6643db 123.02%);
+  opacity: 0.3;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
 }
 
-.current-item{
-    opacity: 1;
-    /*width: 280px;
-    height: 480px;*/
+.enable, .dots:hover {
+  background: linear-gradient(92.18deg, #a049e9 -25.78%, #6643db 123.02%);
+  opacity: 1;
 }
 
-.gallery-wrapper::-webkit-scrollbar{
-    display: none;
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
 }
 
-#biomasnavbar{
-    color:#d2d2d2;
-    font-weight: 300;
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
 }

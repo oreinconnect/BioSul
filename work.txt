@@ -18,3 +18,4 @@ Tarefa -> fazer uma barra de navegação para ter como padrão
 
 
 FALTA O JS DO HOMEPAGE, O NAVBAR QUE DESCE JUNTO
+TERMINAR O HTML DA PAGE PAISES
