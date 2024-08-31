@@ -95,9 +95,11 @@ body {
 
 
 #sairquiz{
-    position:absolute;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
     bottom: 4rem;
-    left: 39.5rem;
+
 }
 
 #buttonsairquiz{
@@ -159,9 +161,10 @@ button {
 }
 
 #contatofooter{
-    position: fixed;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
     bottom: 0;
-    left: 39.8rem;
     opacity: 0.7;
     font-size: 0.85rem; 
     color: #FFFFFF;
