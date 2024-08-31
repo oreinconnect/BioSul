@@ -1,129 +1,80 @@
-var sliderTeam = (function(document, $) {
-  
-  'use strict';
-  
-  var $sliderTeams = $('.slider--teams'),
-      $list = $('#list'),
-      $listItems = $('#list li'),
-      $nItems = $listItems.length,
-      $nView = 3,
-      autoSlider,
-      $current = 0,
-      $isAuto = true,
-      $acAuto = 2500,
-      
-      _init = function() {
-        _initWidth();
-        _eventInit();
-      },
-      
-      _initWidth = function() {
-        $list.css({
-          'margin-left': ~~(100 / $nView) + '%',
-          'width': ~~(100 * ($nItems / $nView)) + '%'
-        });
-        $listItems.css('width', 100 / $nItems + '%');
-        $sliderTeams.velocity({ opacity: 1 }, { display: "block" }, { delay:1000 });
-      },
-      
-      _eventInit = function() {
-        
-        window.requestAnimFrame = (function() {
-          return  window.requestAnimationFrame       || 
-              window.webkitRequestAnimationFrame || 
-              window.mozRequestAnimationFrame    || 
-              window.oRequestAnimationFrame      || 
-              window.msRequestAnimationFrame     || 
-              function(callback, element){
-                window.setTimeout(callback, 1000 / 60);
-              };
-        })();
+var container = document.getElementById('container')
+var slider = document.getElementById('slider');
+var slides = document.getElementsByClassName('slide').length;
+var buttons = document.getElementsByClassName('btn');
 
-        window.requestInterval = function(fn, delay) {
-            if( !window.requestAnimationFrame       && 
-                !window.webkitRequestAnimationFrame && 
-                !window.mozRequestAnimationFrame    && 
-                !window.oRequestAnimationFrame      && 
-                !window.msRequestAnimationFrame)
-                    return window.setInterval(fn, delay);
-            var start = new Date().getTime(),
-            handle = new Object();
+var currentPosition = 0;
+var currentMargin = 0;
+var slidesPerPage = 0;
+var slidesCount = slides - slidesPerPage;
+var containerWidth = container.offsetWidth;
+var prevKeyActive = false;
+var nextKeyActive = true;
 
-            function loop() {
-                var current = new Date().getTime(),
-                delta = current - start;
-                if(delta >= delay) {
-                    fn.call();
-                    start = new Date().getTime();
-                }
-                handle.value = requestAnimFrame(loop);
-            };
-            handle.value = requestAnimFrame(loop);
-            return handle;
-        }
+window.addEventListener("resize", checkWidth);
 
-        window.clearRequestInterval = function(handle) {
-            window.cancelAnimationFrame ? window.cancelAnimationFrame(handle.value) :
-            window.webkitCancelRequestAnimationFrame ? window.webkitCancelRequestAnimationFrame(handle.value)   :
-            window.mozCancelRequestAnimationFrame ? window.mozCancelRequestAnimationFrame(handle.value) :
-            window.oCancelRequestAnimationFrame ? window.oCancelRequestAnimationFrame(handle.value) :
-            window.msCancelRequestAnimationFrame ? msCancelRequestAnimationFrame(handle.value) :
-            clearInterval(handle);
-        };
-        
-        $.each($listItems, function(i) {
-          var $this = $(this);
-          $this.on('touchstart click', function(e) {
-            e.preventDefault();
-            _stopMove(i);
-            _moveIt($this, i);
-          });
-        });
-        
-        autoSlider = requestInterval(_autoMove, $acAuto);
-      },
-      
-      _moveIt = function(obj, x) {
-        
-        var n = x;
-        
-        obj.find('figure').addClass('active');        
-        $listItems.not(obj).find('figure').removeClass('active');
-        
-        $list.velocity({
-          translateX: ~~((-(100 / $nItems)) * n) + '%',
-          translateZ: 0
-        }, {
-          duration: 1000,
-          easing: [400, 26],
-          queue: false
-        });
-        
-      },
-      
-      _autoMove = function(currentSlide) {
-        if ($isAuto) { 
-          $current = ~~(($current + 1) % $nItems);
-        } else {
-          $current = currentSlide;
-        }
-        console.log($current);
-        _moveIt($listItems.eq($current), $current);
-      },
-      
-      _stopMove = function(x) {
-        clearRequestInterval(autoSlider);
-        $isAuto = false;
-        _autoMove(x);
-      };
-  
-  return {
-    init: _init
-  };
+function checkWidth() {
+	containerWidth = container.offsetWidth;
+	setParams(containerWidth);
+}
 
-})(document, jQuery);
+function setParams(w) {
+	if (w < 551) {
+		slidesPerPage = 1;
+	} else {
+		if (w < 901) {
+			slidesPerPage = 2;
+		} else {
+			if (w < 1101) {
+				slidesPerPage = 3;
+			} else {
+				slidesPerPage = 4;
+			}
+		}
+	}
+	slidesCount = slides - slidesPerPage;
+	if (currentPosition > slidesCount) {
+		currentPosition -= slidesPerPage;
+	};
+	currentMargin = - currentPosition * (100 / slidesPerPage);
+	slider.style.marginLeft = currentMargin + '%';
+	if (currentPosition > 0) {
+		buttons[0].classList.remove('inactive');
+	}
+	if (currentPosition < slidesCount) {
+		buttons[1].classList.remove('inactive');
+	}
+	if (currentPosition >= slidesCount) {
+		buttons[1].classList.add('inactive');
+	}
+}
 
-$(window).load(function(){
-  'use strict';
-  sliderTeam.init();
-});
+setParams();
+
+function slideRight() {
+	if (currentPosition != 0) {
+		slider.style.marginLeft = currentMargin + (100 / slidesPerPage) + '%';
+		currentMargin += (100 / slidesPerPage);
+		currentPosition--;
+	};
+	if (currentPosition === 0) {
+		buttons[0].classList.add('inactive');
+	}
+	if (currentPosition < slidesCount) {
+		buttons[1].classList.remove('inactive');
+	}
+};
+
+function slideLeft() {
+	if (currentPosition != slidesCount) {
+		slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
+		currentMargin -= (100 / slidesPerPage);
+		currentPosition++;
+	};
+	if (currentPosition == slidesCount) {
+		buttons[1].classList.add('inactive');
+	}
+	if (currentPosition > 0) {
+		buttons[0].classList.remove('inactive');
+	}
+};

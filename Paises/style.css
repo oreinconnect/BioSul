@@ -105,7 +105,7 @@ h2{
 
 h3{
     font-family: "Inter", sans-serif;
-    font-weight: 370;
+    font-weight: 400;
     font-size: 1.85rem;
     display: flex;
     justify-content: center;
@@ -130,7 +130,7 @@ h3{
 .rowesquerda,
 .rowdireita{
     display: inline-flex;
-    margin: 2rem 7rem 0 7rem;
+    margin: 2rem 10rem 0 10rem;
 }
 
 .rowesquerda,
@@ -153,7 +153,16 @@ h3{
 }
 
 #ultimopais{
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 
+hr{
+    width: 35rem;
+}
 
+#hrh1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}

@@ -20,6 +20,10 @@ h4{
 
 body{
     background-color: #0C110D;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 a{
@@ -51,7 +55,6 @@ header{
 
 footer{
     justify-content:center;
-    margin-top: 30rem;
     display: inline-flex;
     gap: 2.75rem;
     justify-content: center;
@@ -87,99 +90,108 @@ h1{
     font-weight:500;
 }
 
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+#hrcomeco{
+  width: 36rem;
 }
 
-/* Make the images invisible by default */
-.Containers {
+#hrh1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rowcard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+  margin-bottom: 6rem;
+}
+
+.card{
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.cardatual{
+}
+
+.card a img{
+  width: 250px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card a p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.35rem;
+}
+
+
+.cardfora{
   display: none;
 }
 
-/* forward & Back buttons */
-.Back, .forward {
-  cursor: pointer;
-  position: absolute;
-  top: 48%;
-  width: auto;
-  margin-top: -23px;
-  padding: 17px;
-  color: grey;
-  font-weight: bold;
-  font-size: 19px;
-  transition: 0.4s ease;
-  border-radius: 0 5px 5px 0;
-  user-select: none;
+.proxcard img{
+  filter: brightness(60%) blur(0.6px);
 }
 
-/* Place the "forward button" to the right */
-.forward {
-  right: 0;
-  border-radius: 4px 0 0 4px;
-}
 
-/*when the user hovers,add a black background with some little opacity */
-.Back:hover, .forward:hover {
-  background-color: rgba(0,0,0,0.8);
-}
 
-/* Caption Info */
-.info {
-  color: #e3e3e3;
-  font-size: 16px;
-  padding: 10px 14px;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
+#container {
+	height: 100vh;
+	display: grid;
+	place-items: center
 }
-
-/* Content */
-.info {
-  color: #f2f2f3;
-  font-size: 14px;
-  padding: 10px 14px;
-  position: absolute;
-  top: 0;
+#slider-container {
+	height: 300px;
+	width: 85vw;
+	max-width: 1400px;
+	position: relative;
+	overflow: hidden;
+	padding: 20px;
 }
-
-/* The circles or bullets indicators */
-.dots {
-  cursor: pointer;
-  height: 16px;
-  width: 16px;
-  margin: 0 3px;
-  background: linear-gradient(92.18deg, #a049e9 -25.78%, #6643db 123.02%);
-  opacity: 0.3;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.5s ease;
+#slider-container .btn {
+	position: absolute;
+	top: calc(50% - 30px);
+	height: 15px;
+	width: 15px;
+	border-left: 8px solid #696969;
+	border-top: 8px solid #696969;
+	cursor: pointer;
 }
-
-.enable, .dots:hover {
-  background: linear-gradient(92.18deg, #a049e9 -25.78%, #6643db 123.02%);
-  opacity: 1;
+#slider-container .btn:hover {
+	transform: scale(1.2);
 }
-
-/* Faint animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.4s;
-  animation-name: fade;
-  animation-duration: 1.4s;
+#slider-container .btn.inactive {
+	border-color: #282828
 }
-
-@-webkit-keyframes fade {
-  from {opacity: .5}
-  to {opacity: 2}
+#slider-container .btn:first-of-type {
+	transform: rotate(-45deg);
+	left: 10px
 }
-
-@keyframes fade {
-  from {opacity: .5}
-  to {opacity: 2}
+#slider-container .btn:last-of-type {
+	transform: rotate(135deg);
+	right: 10px;
+}
+#slider-container #slider {
+	display: flex;
+	width: 1000%;
+	height: 100%;
+	transition: all .5s;
+}
+#slider-container #slider .slide {
+	height: 90%;
+	margin: auto 10px;
+	background-color: #b5b5b5;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+	display: grid;
+	place-items: center;
+}
+#slider-container #slider .slide span {
+	color: white;
+	font-size: 60px;
 }

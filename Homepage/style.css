@@ -235,6 +235,7 @@ h1,span{
     color: black;
     background-color: #D9D9D9;
     font-size: 1.8rem;
+    cursor: pointer;
 }
 
 #buttoncontrole{

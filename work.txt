@@ -1,28 +1,23 @@
-Tarefa -> fazer uma barra de navegação para ter como padrão
-
-    background-color: hsla(0, 0%, 100%, 0.02);
-    border-radius: 15rem 15rem;
-    height: 0rem;
-
-
-
-
-
-
-
-
-
 250x450 p itens
 310x520 current item
-
 
 
 FALTA O JS DO HOMEPAGE, O NAVBAR QUE DESCE JUNTO
 TERMINAR O HTML DA PAGE PAISES
 
 
-
-
-
-
 BARRA DE PESQUISA -> PAISES
+QUIZ
+BIOMAS PAGINA PARA CADA BIOMA
+
+
+
+https://maujor.com/tutorial/css3-filters.php
+
+
+
+
+            <div id="pularvoltar">
+                <button class="buttonseventos">pular</button>
+                <button class="buttonseventos">voltar</button>
+            </div>    
