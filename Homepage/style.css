@@ -171,7 +171,9 @@ h1,span{
 }
 
 
-
+.banner a h4{
+    display: flex;
+}
 
 
 /*  */
