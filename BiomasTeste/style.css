@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+p{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 250;
+}
+
+h4{
+    font-size: 1.75rem;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 350;
+}
+
+body{
+    background-color: rgb(13, 18, 14);
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 52rem;
+    gap: 2.5rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.logo{
+    display: flex;
+    height: 5.2rem;
+    width: 3.5rem;
+    margin-left: 2.7rem;
+    margin-top: 0.15rem;
+}
+
+header{
+    display: inline-flex;
+}
+
+footer{
+    display: inline-flex;
+    gap: 2.75rem;
+    justify-content: center;
+    padding-bottom: 3rem;
+    background-color: #111D12;
+    width: 100%;
+}
+
+.textofooter{
+    display: flex;
+    margin-top: 3.65rem;
+}
+
+#contatofooter{
+    display: flex;
+    background-color: #111D12;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+#contatofooter p{
+    opacity: 0.9;
+    font-size: 0.85rem;
+}
+
+h1{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.325rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.4rem;
+    font-weight:500;
+}
+
+h5{
+    text-decoration: underline;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+
+h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
