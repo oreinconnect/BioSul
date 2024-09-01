@@ -19,7 +19,11 @@ h4{
 }
 
 body{
-    background-color: rgb(13, 18, 14);
+    background-color: #0C110D;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 a{
@@ -50,6 +54,7 @@ header{
 }
 
 footer{
+    justify-content:center;
     display: inline-flex;
     gap: 2.75rem;
     justify-content: center;
@@ -85,70 +90,81 @@ h1{
     font-weight:500;
 }
 
-h5{
-    text-decoration: underline;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 1.05rem;
+#hrcomeco{
+  width: 36rem;
 }
 
-h2{
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 5rem;
+#hrh1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h3{
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 1.85rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 5rem;
+
+.container {
+  position: relative;
+  padding: 15px;
+  max-width: 880px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-#conteudo{
-    display: inline-flex;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    margin-left: 13rem;
-    margin-bottom: 5rem;
+.gallery-wrapper {
+  overflow-x: auto;
 }
 
-#galeria{
-    display: flex;
-    gap: 5rem;
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
+  left: -13px;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  color: #fff;
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+  opacity: 0.4;
+  cursor: pointer;
+  border: none;
 }
 
-.card{
-    filter: brightness(40%);
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
 }
 
-.card img{
-    width: 250px;
-    height: 390px;
-    object-fit: cover;
+.arrow-right {
+  right: 0;
+  left: auto;
+  text-align: right;
+  background: linear-gradient(to right, transparent 0%, black 200%);
 }
 
-.card p{
-    text-align: center;
-    color: #D3D3D3;
-    font-weight: 400;
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 40px;
 }
 
-.fora{
-    display: none;
+.item {
+  width: 260px;
+  height: 430px;
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: all 400ms ease-in-out;
+  filter: brightness(30%);
+  opacity: 0.7;
 }
 
-.atual{
-    filter: brightness(100%);
+.current-item {
+  filter: brightness(100%);
+  opacity: 1;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+  display: none;
 }
