@@ -21,3 +21,8 @@ https://maujor.com/tutorial/css3-filters.php
                 <button class="buttonseventos">pular</button>
                 <button class="buttonseventos">voltar</button>
             </div>    
+            
+
+
+
+ESTILIZAÇÃO DO BOTAO DA TELA DE TROCA DE BIOMAS E ESTILIZAÇÃO DO QUIZ
