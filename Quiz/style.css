@@ -21,7 +21,7 @@ body {
 }
 
 .content {
-  background-color: #6B933F;
+  background-color: rgb(223, 223, 223);;
   display: flex;
   margin-left: 18rem;
   margin-right: 18rem;
@@ -45,7 +45,7 @@ body {
 }
 
 .questionbg{
-    background-color: #206BC2;
+    background-color: #6B933F;
     border-radius: 20px;
     margin-left: 1.8rem;
     margin-right: 1.8rem;
@@ -56,14 +56,14 @@ body {
 }
 
 .question{
-  display: flex;
-    color: white;
+    display: flex;
+    color: black;
     justify-content: center;
     margin-top: 0.35rem;
 }
 
 #cardperguntasrespostas{
-    background-color: #206BC2;
+    background-color: #6B933F;
     border-radius: 20px;
     display: flex;
     justify-content: left;
