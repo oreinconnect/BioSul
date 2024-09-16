@@ -315,7 +315,7 @@ h1,span{
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 }
 
 #conteudosvideos>hr{
@@ -341,4 +341,14 @@ h1,span{
 .cardvideos img{
     width: 220px;
     height: 340px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#botaosubir{
+    display: flex;
+    justify-content: right;
+    margin: 0 5rem 1rem;
 }

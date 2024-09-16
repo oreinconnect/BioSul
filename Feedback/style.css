@@ -162,7 +162,7 @@ input{
 #enviarbotao{
     background-color: #273715;
     border-radius: 2rem;
-    padding: 1.1rem 2.8rem 1.1rem 2.8rem;
+    padding: 1.1rem 2rem 1.1rem 2rem;
     border: none;
     text-decoration: none;
     font-size: 1.5rem;
@@ -170,7 +170,7 @@ input{
 
 /* caixas de input */
 .input{
-    padding-left: 10rem;
+    width: 20rem;
     border-radius: 1rem;
     color: black;
 }
@@ -180,7 +180,6 @@ input{
     padding-bottom: 10rem;
     color: black;
 }
-
 
 
 

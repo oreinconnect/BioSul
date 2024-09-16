@@ -173,3 +173,14 @@ h3{
     filter: brightness(100%);
     transition: 0.4s;
 }
+
+.hr{
+    width: 35rem;
+}
+
+#hrh1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}

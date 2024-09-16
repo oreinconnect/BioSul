@@ -54,7 +54,7 @@ function finish() {
     contentFinish.style.display = "flex";
     if(questionsCorrect == 5){
       console.log("acertou tudo!")
-      textFinish.innerHTML = `PARABENS!!<br> VOCÊ ACERTOU TODO QUIZ!!`;
+      textFinish.innerHTML = `PARABENS!!<br> VOCÊ ACERTOU TODO O QUIZ!!`;
       msgfinal.innerHTML = `VOCÊ ACERTOU TODO O QUIZ!`
     }
 }
