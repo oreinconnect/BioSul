@@ -1,29 +1,18 @@
-250x450 p itens
-310x520 current item
-
-
-FALTA O JS DO HOMEPAGE, O NAVBAR QUE DESCE JUNTO
-TERMINAR O HTML DA PAGE PAISES
-
-
-BARRA DE PESQUISA -> PAISES
-QUIZ
-BIOMAS PAGINA PARA CADA BIOMA
-
-
 
 https://maujor.com/tutorial/css3-filters.php
 
 
+BIOMAS QUE PROVAVELMENTE ESTÃO FALTANDO -> PATAGONIA, FLORESTAS ARAUCARIAS E CAATINGA
 
 
-            <div id="pularvoltar">
-                <button class="buttonseventos">pular</button>
-                <button class="buttonseventos">voltar</button>
-            </div>    
-            
+SE POSSIVEL MELHORAR A ESTILIZAÇÃO DA TELA DE BIOMAS -> ScrollIntoView | CurrentItem(cardAtual)
+MELHORAR A APARÊNCIA DO QUIZ
+ADICIONAR UM CARD PARA CADA PAÍS 
+BOTÃO DE SUBIR TELA EM PAISES E HOMEPAGE
+BOTÃO QUE LINKA PARA A OPÇÃO LINK NOS VIDEOS
 
 
+<<<<<<< HEAD
 
 ESTILIZAÇÃO DO BOTAO DA TELA DE TROCA DE BIOMAS E ESTILIZAÇÃO DO QUIZ
 
@@ -36,3 +25,6 @@ BIOMAS QUE PROVAVELMENTE ESTÃO FALTANDO -> PATAGONIA, FLORESTAS ARAUCARIAS E CA
 
 
 CENTRALIZAR A TELA DOS BIOMAS
+=======
+MUDAR TUDO DO QUIZ
+>>>>>>> 8ed69ecc38a0645b191051f3eeeaffbc9878d034
