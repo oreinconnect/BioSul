@@ -19,4 +19,7 @@ CENTRALIZAR A TELA DOS BIOMAS
 MUDAR TUDO DO QUIZ
 
 
-CHAPARRAL???
+arrumar os input do feedback
+melhorar ESTILIZAÇÃO do BIOMAS
+card para cada pais em PAISES
+melhorar os textos em geral

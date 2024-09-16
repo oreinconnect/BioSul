@@ -166,3 +166,12 @@ h3{
     align-items: center;
     margin-bottom: 6rem;
 }
+
+.card{
+    background-color: red;
+    display: none;
+}
+
+.atual{
+    display: flex;
+}

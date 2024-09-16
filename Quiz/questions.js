@@ -22,23 +22,23 @@ export default[
 
 
     {
-        question: "Em qual bioma da América do Sul encontramos uma combinação única de savanas, florestas secas e formações rochosas, contribuindo para uma das maiores taxas de endemismo de espécies vegetais?",
+        question: "Qual a principal ameaça ao bioma Pampa em termos de biodiversidade?",
         answers: [
-            { option: "A) Pantanal", correct: false },
-            { option: "B) Cerrado", correct: true },
-            { option: "C) Pampas", correct: false },
-            { option: "D) Caatinga", correct: false }
+            { option: "A) A conversão de pastagens nativas em monoculturas", correct: true },
+            { option: "B) A expansão de desertos ao longo da fronteira sul", correct: false },
+            { option: "C) A introdução de espécies florestais exóticas", correct: false },
+            { option: "D) O aumento das temperaturas nas áreas úmidas", correct: false }
         ]
     },
 
 
     {
-        question: "Qual bioma da América do Sul é responsável por abrigar o maior número de espécies de plantas adaptadas a solos ácidos e ricos em alumínio?",
+        question: "Qual é o principal fator que contribui para a alta biodiversidade na Floresta Amazônica?",
         answers: [
-            { option: "A) Caatinga", correct: false },
-            { option: "B) Pantanal", correct: false },
-            { option: "C) Mata Atlântica", correct: false },
-            { option: "D) Cerrado", correct: true }
+            { option: "A) A pouca variação de temperatura ao longo do ano", correct: true },
+            { option: "B) A abundância de rios e áreas alagadas", correct: false },
+            { option: "C) A alta concentração de solos férteis", correct: false },
+            { option: "D) A influência das correntes marítimas do Atlântico Sul", correct: false }
         ]
     },
 

@@ -32,6 +32,21 @@ body {
   gap: 0.5rem;
 }
 
+#quiztitulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quiztitulo h3{
+  font-weight: 350;
+  font-size: 1.5rem;
+}
+
+.content hr{
+  margin: 0 2rem 1rem 2rem;
+}
+
 #rowbaixo{
   display: inline-flex;
 }
@@ -40,33 +55,29 @@ body {
 .spnQtd {
   display: flex;
   margin-left: 51rem;
-  color: white;
+  color: black;
   font-size: 1.3rem;
 }
 
 .questionbg{
     background-color: #6B933F;
     border-radius: 20px;
-    margin-left: 1.8rem;
-    margin-right: 1.8rem;
-    width: 53.5rem;
-    height: 3rem;
-    text-align: left;
+    height: 4rem;
     text-align: center;
+    margin: 0 2rem 0 2rem;
 }
 
 .question{
     display: flex;
-    color: black;
+    color: white;
     justify-content: center;
-    margin-top: 0.35rem;
+    margin: 0.45rem 1rem 0 1rem;
 }
 
 #cardperguntasrespostas{
     background-color: #6B933F;
     border-radius: 20px;
     display: flex;
-    justify-content: left;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     margin-left: 1.8rem;
@@ -97,7 +108,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 #buttonsairquiz{
@@ -162,7 +173,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.2rem;
+    margin-top: 2rem;
     opacity: 0.7;
     font-size: 0.85rem; 
     color: #FFFFFF;

@@ -12,6 +12,15 @@ import questions from "./questions.js";
 let currentIndex = 0;
 let questionsCorrect = 0;
 
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
 btnRestart.onclick = () => {
   content.style.display = "flex";
   contentFinish.style.display = "none";
@@ -23,6 +32,7 @@ btnRestart.onclick = () => {
 
 
 function nextQuestion(e) {
+  sleep(400)
   if (e.target.getAttribute("data-correct") === "true") {
     questionsCorrect++;
   }
@@ -35,16 +45,21 @@ function nextQuestion(e) {
   }
 }
 
-
+// card de finalização
 function finish() {
+    console.log(questionsCorrect)
     textFinish.innerHTML = `VOCÊ CONCLUIU O QUIZ COM ${questionsCorrect} ACERTOS DE ${questions.length} QUESTÕES!`;
     msgfinal.innerHTML = `VOCÊ TERMINOU O QUIZ!`
     content.style.display = "none";
-    contentFinish.style.display = "flex";  
-
+    contentFinish.style.display = "flex";
+    if(questionsCorrect == 5){
+      console.log("acertou tudo!")
+      textFinish.innerHTML = `PARABENS!!<br> VOCÊ ACERTOU TODO QUIZ!!`;
+      msgfinal.innerHTML = `VOCÊ ACERTOU TODO O QUIZ!`
+    }
 }
 
-
+// carregar as perguntas e respostas
 function loadQuestion() {
   spnQtd.innerHTML = `${currentIndex + 1}/${questions.length}`;
   const item = questions[currentIndex];
