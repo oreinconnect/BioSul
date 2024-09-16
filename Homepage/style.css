@@ -188,7 +188,13 @@ h1,span{
     margin-top: 7rem;
     display: inline-flex;
     gap: 6rem;
-    margin-left: 10.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#homepagebiomas{
+    display: flex;
+    flex-direction: column;
 }
 
 #rowtexto{
@@ -256,6 +262,8 @@ h1,span{
 #noticias{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #noticias>hr{
@@ -263,7 +271,8 @@ h1,span{
     margin-bottom: 2rem;
     margin-top: 0.8rem;
     width: 20rem;
-    margin-left: 36rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* dentro do card */
