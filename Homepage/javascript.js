@@ -6,5 +6,14 @@ window.addEventListener("scroll", function(){
 const url = "./Login/index.html"
 
 import { verifyToken } from "../verify-token.js"
+import { getName } from "../get-name.js"
+import { logout } from "../logout.js"
 
 verifyToken(url)
+
+const name = await getName()
+const nameP = document.querySelector("#usuario")
+nameP.innerText = "USUARIO: "+name
+
+
+logout()
