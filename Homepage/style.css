@@ -31,10 +31,14 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 52rem;
+    margin-left: 36rem;
     gap: 2.5rem;
 }
 
+#usuario{
+    font-size: 1.3rem;
+    margin-left: 2rem;
+}
 
 
 footer{
