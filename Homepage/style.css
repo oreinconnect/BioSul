@@ -41,6 +41,10 @@ a{
     margin-top: 0.1rem;
 }
 
+#usuario:hover{
+    cursor: pointer;
+}
+
 
 footer{
     display: inline-flex;
